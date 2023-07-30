@@ -5,7 +5,7 @@ RUN wget https://github.com/novnc/noVNC/archive/refs/tags/v1.4.0.tar.gz
 RUN curl -LO https://proot.gitlab.io/proot/bin/proot
 RUN chmod 755 proot
 RUN mv proot /bin
-RUN tar -xvf v1.2.0.tar.gz
+RUN tar -xvf v1.4.0.tar.gz
 RUN mkdir  $HOME/.vnc
 RUN echo 'q111111' | vncpasswd -f > $HOME/.vnc/passwd
 RUN chmod 600 $HOME/.vnc/passwd
